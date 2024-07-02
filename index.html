@@ -1,0 +1,73 @@
+<!-- *** Lo primero que debes hacer es FORKEAR este documento *** -->
+<!-- *** si tenéis dos veces abierto el mismo proyecto no se refrescará y dará problemas *** -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS MOLA</title>
+    <link href="./styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="warning red">
+          <span
+            >Si tienes dos veces abierto el mismo proyecto no se refrescará y
+            dará problemas. Trabaja siempre desde un solo espacio 💻</span
+          >
+        </div>
+        <div class="warning yellow">
+          <span
+            >Lo primero que debes hacer es <strong><i>FORK</i></strong> de este
+            documento.</span
+          >
+          <span>💾 Recuerda guardar tus cambios para no perderlos.</span>
+        </div>
+      </header>
+      <h2>Async/Await</h2>
+      <p>
+        async/await es una característica de JavaScript que simplifica y mejora
+        la legibilidad del código asíncrono. Permite escribir código asíncrono
+        de manera más parecida a código síncrono, haciendo que sea más fácil de
+        entender y mantener.
+      </p>
+      <p>
+        <strong>async:</strong> La palabra clave async se utiliza para declarar
+        una función como asíncrona. Una función asíncrona siempre devuelve una
+        Promesa
+      </p>
+      <p>
+        <strong>await:</strong> La palabra clave await se utiliza dentro de una
+        función async para esperar a que una Promesa se resuelva o se rechace.
+        Hace que la ejecución de la función espere hasta que la Promesa se
+        resuelva antes de continuar.
+      </p>
+      <p><strong>Ejercicio</strong></p>
+      <ul>
+        <li>
+          Crea una función asincrona hacia este end-point
+          https://jsonplaceholder.typicode.com/todos/
+        </li>
+        <li>Saca las frases filtradas por userId (del 1 al 3)</li>
+        <li>
+          Pon esas frases en su respectivos contenedores (user1, user2, user3)
+        </li>
+      </ul>
+      <div class="container">
+        <h2>Frases - UserId: 1</h2>
+        <ul id="userId1"></ul>
+      </div>
+      <div class="container">
+        <h2>Frases - UserId: 2</h2>
+        <ul id="userId2"></ul>
+      </div>
+      <div class="container">
+        <h2>Frases - UserId: 3</h2>
+        <ul id="userId3"></ul>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
